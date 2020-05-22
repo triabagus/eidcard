@@ -117,7 +117,7 @@
             var canvas = document.getElementById("myCanvas");
             var context = canvas.getContext("2d");
             context.clearRect(0, 0, 4000, 3000);
-            var fontsize = 30;
+            var fontsize = 32;
 
             if (name.length > 20) {
                 fontsize = 40 - (name.length - 20);
@@ -130,8 +130,8 @@
                 context.font = "bold" + fontsize + "px iufont";
                 context.fillStyle = "#041A3D";
                 context.textAlign = "center";
-                context.fillText(res, 990, 1000);
-                context.fillText(res2, 990, 1050);
+                context.fillText(res, 1000, 1000);
+                context.fillText(res2, 1000, 1050);
             };
             imageObj.src = "images/ukhuwah.jpeg";
         }
@@ -143,11 +143,11 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 35px iufont";
+                context.font = "bold 32px iufont";
                 context.fillStyle = "#041A3D";
                 context.textAlign = "center";
-                context.fillText("Pesantren Al-Andalus", 990, 1000);
-                context.fillText("Keluarga Besar", 990, 1050);
+                context.fillText("Pesantren Al-Andalus", 1000, 1000);
+                context.fillText("Keluarga Besar", 1000, 1050);
 
             };
 
