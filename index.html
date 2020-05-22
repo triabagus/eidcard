@@ -117,7 +117,7 @@
             var canvas = document.getElementById("myCanvas");
             var context = canvas.getContext("2d");
             context.clearRect(0, 0, 4000, 3000);
-            var fontsize = 32;
+            var fontsize = 36;
 
             if (name.length > 20) {
                 fontsize = 40 - (name.length - 20);
@@ -127,7 +127,7 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold" + fontsize + "px iufont";
+                context.font = "" + fontsize + "px iufont";
                 context.fillStyle = "#041A3D";
                 context.textAlign = "center";
                 context.fillText(res, 1000, 1000);
@@ -143,11 +143,11 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 32px iufont";
+                context.font = "36px iufont";
                 context.fillStyle = "#041A3D";
                 context.textAlign = "center";
                 context.fillText("Pesantren Al-Andalus", 1000, 1000);
-                context.fillText("Keluarga Besar", 1000, 1050);
+                // context.fillText("Keluarga Besar", 1000, 1050);
 
             };
 
