@@ -18,13 +18,13 @@ span {
 
 
 /* Light */
-@font-face {
+/* @font-face {
     font-family: "JF Flat";
     src: url('../fonts/JF-flat/JF-Flat-light.eot');
     src: url('../fonts/JF-flat/JF-Flat-light.eot?#iefix') format('embedded-opentype'), url('../fonts/JF-flat/JF-Flat-light.svg#JF Flat Light') format('svg'), url('../fonts/JF-flat/JF-Flat-light.woff') format('woff'), url('../fonts/JF-flat/JF-Flat-light.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
-}
+} */
 
 /* Regular */
 @font-face {

@@ -104,6 +104,7 @@
             var element = document.getElementById("save");
             element.classList.remove("hidden");
 
+            // add name for input to image canva
             var str1 = "";
             var str2 = "";
             var str3 = "";
@@ -127,10 +128,10 @@
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
                 context.font = "bold" + fontsize + "px iufont";
-                context.fillStyle = "#35507f";
+                context.fillStyle = "#041A3D";
                 context.textAlign = "left";
-                context.fillText(res, 800, 1000);
-                context.fillText(res2, 800, 1050);
+                context.fillText(res, 850, 1000);
+                context.fillText(res2, 890, 1050);
             };
             imageObj.src = "images/ukhuwah.jpeg";
         }
@@ -143,10 +144,10 @@
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
                 context.font = "bold 35px iufont";
-                context.fillStyle = "#35507f";
+                context.fillStyle = "#041A3D";
                 context.textAlign = "left";
-                context.fillText("Pesantren Al-Andalus", 800, 1000);
-                // context.fillText("Keluarga Besar", 800, 1050);
+                context.fillText("Pesantren Al-Andalus", 850, 1000);
+                // context.fillText("Keluarga Besar", 890, 1050);
 
             };
 
