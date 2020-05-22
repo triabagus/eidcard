@@ -65,7 +65,7 @@
         <div class="doc" style="padding-top:0%; ">
             <br>
             <div style="margin-top:70px; text-align:center; font-weight:100;font-size:25px;color:#f7fafc;">
-                Kartu Idul Fitri <b>Pesantren Al-Andalus</b>
+                Kartu Idul Fitri Pesantren Al-Andalus
             </div>
             <hr>
             <canvas width="2364" height="2364" id="myCanvas"></canvas>
@@ -117,10 +117,10 @@
             var canvas = document.getElementById("myCanvas");
             var context = canvas.getContext("2d");
             context.clearRect(0, 0, 4000, 3000);
-            var fontsize = 90;
+            var fontsize = 80;
 
             if (name.length > 20) {
-                fontsize = 90 - (name.length - 20);
+                fontsize = 80 - (name.length - 20);
             }
             //alert(name.length);
             var imageObj = new Image();
@@ -130,8 +130,8 @@
                 context.font = "" + fontsize + "px iufont";
                 context.fillStyle = "#041A3D";
                 context.textAlign = "center";
-                context.fillText(res, 1800, 1800);
-                context.fillText(res2, 1800, 1900);
+                context.fillText(res, 1850, 1900);
+                context.fillText(res2, 1850, 1990);
             };
             imageObj.src = "images/ied.png";
         }
@@ -143,11 +143,11 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "90px iufont";
+                context.font = "80px iufont";
                 context.fillStyle = "#041A3D";
                 context.textAlign = "center";
-                context.fillText("Pesantren Al-Andalus", 1800, 1800);
-                context.fillText("Keluarga Besar", 1800, 1900);
+                context.fillText("Pesantren Al-Andalus", 1850, 1900);
+                context.fillText("Keluarga Besar", 1850, 1990);
 
             };
 
