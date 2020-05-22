@@ -68,7 +68,7 @@
                 Kartu Idul Fitri <b>Pesantren Al-Andalus</b>
             </div>
             <hr>
-            <canvas width="1280" height="1280" id="myCanvas"></canvas>
+            <canvas width="2364" height="2364" id="myCanvas"></canvas>
             <br>
             <input type="text" id="txt" placeholder="Tuliskan Nama Anda" class="form-control"
                 style="font-size:20px; text-align:left;margin-bottom:10px;">
@@ -117,10 +117,10 @@
             var canvas = document.getElementById("myCanvas");
             var context = canvas.getContext("2d");
             context.clearRect(0, 0, 4000, 3000);
-            var fontsize = 36;
+            var fontsize = 90;
 
             if (name.length > 20) {
-                fontsize = 40 - (name.length - 20);
+                fontsize = 90 - (name.length - 20);
             }
             //alert(name.length);
             var imageObj = new Image();
@@ -130,10 +130,10 @@
                 context.font = "" + fontsize + "px iufont";
                 context.fillStyle = "#041A3D";
                 context.textAlign = "center";
-                context.fillText(res, 1000, 1000);
-                context.fillText(res2, 1000, 1050);
+                context.fillText(res, 1800, 1800);
+                context.fillText(res2, 1800, 1900);
             };
-            imageObj.src = "images/ukhuwah.jpeg";
+            imageObj.src = "images/ied.png";
         }
 
         window.onload = function () {
@@ -143,15 +143,15 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "36px iufont";
+                context.font = "90px iufont";
                 context.fillStyle = "#041A3D";
                 context.textAlign = "center";
-                context.fillText("Pesantren Al-Andalus", 1000, 1000);
-                // context.fillText("Keluarga Besar", 1000, 1050);
+                context.fillText("Pesantren Al-Andalus", 1800, 1800);
+                context.fillText("Keluarga Besar", 1800, 1900);
 
             };
 
-            imageObj.src = "images/ukhuwah.jpeg";
+            imageObj.src = "images/ied.png";
         };
     </script>
 
